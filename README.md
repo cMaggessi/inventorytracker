@@ -14,22 +14,10 @@ The focus of this challenge is on **clean backend design, data processing, and r
 
 ---
 
-# Evaluation Criteria
 
-This challenge evaluates:
+# Implement a REST API endpoint:
 
-* **API design**
-* **CSV data parsing**
-* **Clean Java code structure**
-* **Error handling**
-* **Separation of concerns**
-* **Testability**
 
----
-
-# Technical Requirements
-
-Implement a REST API endpoint:
 
 ```
 POST /analyze-inventory
@@ -40,6 +28,7 @@ The endpoint must:
 * Accept a **CSV file upload**
 * Process the inventory movements
 * Return a **JSON summary of inventory status**
+
 
 ---
 
@@ -153,50 +142,14 @@ Example:
 
 ---
 
-# Suggested Java Tech Stack
+# Tech stack
 
-You may use:
+I use:
 
 * **Java 17+**
 * **Spring Boot**
 * **Maven or Gradle**
 * **OpenCSV / Apache Commons CSV** for CSV parsing
-* **JUnit + Mockito** for testing
-
----
-
-# Suggested Project Structure
-
-```
-inventory-analyzer/
-│
-├── src/main/java/com/example/inventory
-│
-│   ├── controller
-│   │   └── InventoryController.java
-│
-│   ├── service
-│   │   └── InventoryService.java
-│
-│   ├── model
-│   │   ├── InventoryItem.java
-│   │   ├── InventorySummary.java
-│   │   └── Anomaly.java
-│
-│   ├── parser
-│   │   └── CsvParser.java
-│
-│   └── InventoryApplication.java
-│
-├── src/test/java
-│   └── InventoryServiceTest.java
-│
-├── sample-data
-│   └── inventory.csv
-│
-├── pom.xml
-└── README.md
-```
 
 ---
 
@@ -208,37 +161,3 @@ Using `curl`:
 curl -X POST http://localhost:8080/analyze-inventory \
   -F "file=@inventory.csv"
 ```
-
----
-
-# Bonus Points
-
-Additional improvements that will strengthen the solution:
-
-* Streaming large CSV files instead of loading them fully into memory
-* Clear validation and error responses
-* Unit tests for parsing and processing logic
-* Logging and structured error handling
-* Docker containerization
-
----
-
-# Deliverables
-
-The submission should include:
-
-* Complete Java source code
-* Instructions to run the application
-* Unit tests
-* Example CSV file
-
----
-
-# Notes
-
-Focus on:
-
-* **Readable and maintainable code**
-* **Good API design**
-* **Proper separation of responsibilities**
-* **Robust error handling**
