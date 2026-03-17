@@ -1,0 +1,12 @@
+timestamp,product_id,product_name,type,quantity
+1717243200,1001,Wireless Mouse,in,50
+1717246800,1002,Mechanical Keyboard,in,30
+1717250400,1001,Wireless Mouse,out,5
+1717254000,1003,USB-C Cable,in,100
+1717257600,1002,Mechanical Keyboard,out,10
+1717261200,1001,Wireless Mouse,out,10
+1717264800,1003,USB-C Cable,out,25
+1717268400,1004,Laptop Stand,in,15
+1717272000,1004,Laptop Stand,out,5
+1717275600,1005,Webcam,in,8
+1717275600,1234,Webcam C-920,invalidType,-2
