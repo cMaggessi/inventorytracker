@@ -32,21 +32,8 @@ The endpoint must:
 
 ---
 
-# CSV File Format
-
-The uploaded CSV file will contain the following columns:
-
-| Column         | Description                                           |
-| -------------- | ----------------------------------------------------- |
-| `timestamp`    | Unix timestamp of the movement                        |
-| `product_id`   | Unique product identifier                             |
-| `product_name` | Human-readable product name                           |
-| `type`         | Either `in` (stock received) or `out` (stock removed) |
-| `quantity`     | Number of units moved (positive integer)              |
-
----
-
 # Example CSV
+(You can just create a .csv file copying the content below for testing):
 
 ```csv
 timestamp,product_id,product_name,type,quantity
