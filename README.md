@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this exercise, you will build a **Java API service** that processes **warehouse inventory movement logs** and returns the **current state of stock**.
+In this exercise, I will build a **Java API service** that processes **warehouse inventory movement logs** and returns the **current state of stock**.
 
 The service should accept a **CSV file** containing stock movements and return a summary including:
 
@@ -11,6 +11,8 @@ The service should accept a **CSV file** containing stock movements and return a
 * Any detected anomalies in the data
 
 The focus of this challenge is on **clean backend design, data processing, and robust error handling** using Java.
+
+_**You can copy my design and apply on your own language or framework if you prefer, but I will be implementing it in Java with Spring Boot for this challenge.**_
 
 ---
 
